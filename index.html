@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb Listings Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Airbnb Listings Analyzer</h1>
+        <div class="description">
+            Powerful data analysis tool for exploring and understanding Airbnb listing data.<br>
+            Upload your <b>listings.csv</b> file and get instant insights!
+        </div>
+    </header>
+    <main>
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Automatic data cleaning and preprocessing</li>
+            <li>Median and mean price analysis by neighborhood and room type</li>
+            <li>Minimum and maximum price statistics</li>
+            <li>Room type distribution</li>
+            <li>Outlier detection using IQR method</li>
+            <li>Interactive visualizations: histograms, boxplots, bar charts, and outlier plots</li>
+        </ul>
+        <div class="upload-section">
+            <h2>Get Started</h2>
+            <form id="upload-form" enctype="multipart/form-data" method="post" action="/analyze">
+                <label for="csvfile"><b>Upload your Airbnb <code>listings.csv</code> file:</b></label><br>
+                <input type="file" id="csvfile" name="csvfile" accept=".csv" required><br>
+                <button class="btn" type="submit">Analyze</button>
+            </form>
+        </div>
+        <div id="results">
+            <!-- Analysis results and visualizations will appear here after upload -->
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Airbnb Listings Analyzer &mdash; Data Science Demo App
+    </footer>
+</body>
+</html>
+      </ul>
+    </main>
+
+  </body>
+  <script src="static/js/script.js"></script>
+</html>
